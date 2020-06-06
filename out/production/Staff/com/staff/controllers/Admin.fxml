@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorAdmin" prefHeight="637.0" prefWidth="1119.0" style="-fx-background-color: #DDE4EE;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.staff.controllers.AdminController">
+   <children>
+      <Pane layoutX="44.0" layoutY="218.0" prefHeight="405.0" prefWidth="339.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <Text fill="#1d2945" layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Missions">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="14.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout de plusieurs missions " textAlignment="CENTER" wrappingWidth="192.00000616908073">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="14.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure de travail fixé entre 12 et 17 €" textAlignment="CENTER" wrappingWidth="249.26219701766968">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="15.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respecter le staffer " textAlignment="CENTER" wrappingWidth="135.0000352859497">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="15.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respecter le contrat de travail " textAlignment="CENTER" wrappingWidth="204.0000352859497">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="14.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respecter les heures de travail fixées" textAlignment="CENTER" wrappingWidth="249.26219701766968">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="15.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Respect des delais de validation des missions " textAlignment="CENTER" wrappingWidth="308.2621970176697">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="drawerImage11112" fitHeight="25.0" fitWidth="31.0" layoutX="207.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage111121" fitHeight="25.0" fitWidth="31.0" layoutX="263.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage1111211" fitHeight="25.0" fitWidth="31.0" layoutX="217.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage11112111" fitHeight="25.0" fitWidth="31.0" layoutX="150.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage111121111" fitHeight="25.0" fitWidth="31.0" layoutX="263.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage1111211111" fitHeight="25.0" fitWidth="31.0" layoutX="313.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="62.0" prefWidth="1119.0" style="-fx-background-color: #1D2945;" AnchorPane.bottomAnchor="575.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="drawerImage" fitHeight="62.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_apps_white_18dp.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="60.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff" wrappingWidth="67.13671875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="680.0" layoutY="18.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #73ACF1;" text="Chercher" textFill="WHITE" />
+            <JFXButton layoutX="809.0" layoutY="18.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #9099AA;" text="Ajouter" textFill="WHITE" />
+            <TextField layoutX="425.0" layoutY="19.0" prefHeight="25.0" prefWidth="238.0" promptText="Chercher" />
+            <ImageView fx:id="drawerImage11" fitHeight="17.0" fitWidth="24.0" layoutX="957.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_chat_bubble_outline_white_18dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage111" fitHeight="17.0" fitWidth="24.0" layoutX="990.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_bar_chart_white_18dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage1111" fitHeight="17.0" fitWidth="24.0" layoutX="1018.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_settings_white_18dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage11111" fitHeight="17.0" fitWidth="24.0" layoutX="1045.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_power_settings_new_white_18dp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="240.0" layoutY="90.0" prefHeight="105.0" prefWidth="663.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <Text fill="#1d2945" layoutX="243.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#cbd0dc" layoutX="39.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression." textAlignment="CENTER" wrappingWidth="615.2080078125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="61.0" layoutX="309.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/adminSettings.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="36.0" layoutY="90.0" prefHeight="105.0" prefWidth="192.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <Text fill="#1d2945" layoutX="50.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#cbd0dc" layoutX="34.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staffers inscrits" textAlignment="CENTER" wrappingWidth="123.00000759959221">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="61.0" layoutX="81.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/adminUser.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="913.0" layoutY="90.0" prefHeight="105.0" prefWidth="192.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <Text fill="#1d2945" layoutX="53.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="34">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#cbd0dc" layoutX="24.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entreprises inscrites" textAlignment="CENTER" wrappingWidth="143.0000075995922">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="46.0" fitWidth="61.0" layoutX="96.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/adminCompany.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="390.0" layoutY="220.0" prefHeight="405.0" prefWidth="339.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <Text fill="#1d2945" layoutX="33.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criteres">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="10.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etre parmis les premiers a postuler " textAlignment="CENTER" wrappingWidth="237.99999833106995">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="14.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avoir de l'experience sur le travail demandé" textAlignment="CENTER" wrappingWidth="289.99999833106995">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="10.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Habituer a travailler dans une entreprise" textAlignment="CENTER" wrappingWidth="273.99999618530273">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#1d2945" layoutX="10.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etre disponible " textAlignment="CENTER" wrappingWidth="109.66115474700928">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="drawerImage1111212" fitHeight="25.0" fitWidth="31.0" layoutX="248.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage11112121" fitHeight="25.0" fitWidth="31.0" layoutX="304.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage11112122" fitHeight="25.0" fitWidth="31.0" layoutX="284.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage11112123" fitHeight="25.0" fitWidth="31.0" layoutX="118.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage111121231" fitHeight="25.0" fitWidth="31.0" layoutX="304.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/accepted.png" />
+               </image>
+            </ImageView>
+            <Text fill="#1d2945" layoutX="14.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="vehicule obligatoire pour certaines missions" textAlignment="CENTER" wrappingWidth="289.9999952316284">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="rootPane" layoutX="741.0" layoutY="218.0" prefHeight="405.0" prefWidth="364.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;">
+         <children>
+            <Text fill="#1d2945" layoutX="33.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle entreprise">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#cbd0dc" layoutX="33.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Lorem Ipsum impression." textAlignment="CENTER" wrappingWidth="192.00000616908073">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="buttonAddEntreprise" layoutX="21.0" layoutY="311.0" onAction="#addNewEntreprise" prefHeight="36.0" prefWidth="225.0" style="-fx-background-color: #73ACF1;" text="Valider les informations " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="nameTxt" layoutX="21.0" layoutY="100.0" prefHeight="27.0" prefWidth="225.0" promptText="Nom de l'entreprise" style="-fx-border-color: #1d2945;" />
+            <TextField fx:id="imageTxt" layoutX="21.0" layoutY="153.0" prefHeight="27.0" prefWidth="225.0" promptText="lien vers le logo" style="-fx-border-color: #1d2945;" />
+            <TextField fx:id="managerTxt" layoutX="21.0" layoutY="212.0" prefHeight="27.0" prefWidth="225.0" promptText="Manager" style="-fx-border-color: #1d2945;" />
+            <TextField fx:id="telTxt" layoutX="21.0" layoutY="264.0" prefHeight="27.0" prefWidth="225.0" promptText="Telephone" style="-fx-border-color: #1d2945;" />
+            <ImageView fx:id="progress" fitHeight="66.0" fitWidth="67.0" layoutX="268.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/blueloader.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="opacityPane" layoutX="-285.0" layoutY="-217.0" prefHeight="637.0" prefWidth="1044.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="drawerPane" prefHeight="575.0" prefWidth="225.0" style="-fx-background-color: #1D2945;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="845.0" AnchorPane.topAnchor="62.0">
+         <children>
+            <GridPane layoutY="90.0" prefHeight="396.0" prefWidth="274.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#openEntreprise" prefHeight="85.0" prefWidth="274.0" text="Entreprises" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_dashboard_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" onAction="#openMission" prefHeight="85.0" prefWidth="274.0" text="Missions" textFill="WHITE" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_timer_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="76.0" onAction="#openCandidat" prefHeight="85.0" prefWidth="274.0" text="Candidatures" textFill="WHITE" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_phone_iphone_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="142.0" prefHeight="85.0" prefWidth="274.0" text="Factures" textFill="WHITE" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_assignment_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="208.0" prefHeight="85.0" prefWidth="274.0" text="Paiement" textFill="WHITE" GridPane.rowIndex="4">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_euro_symbol_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="85.0" prefWidth="274.0" text="Rapports" textFill="WHITE" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_assignment_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

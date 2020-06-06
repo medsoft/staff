@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="442.0" style="-fx-background-color: #2E2F43;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.staff.controllers.LoginController">
+   <children>
+      <TextField fx:id="emailTxt" layoutX="118.0" layoutY="104.0" prefHeight="25.0" prefWidth="221.0" promptText="Email" style="-fx-background-color: #b8BBC5;" />
+      <PasswordField fx:id="passwordTxt" layoutX="118.0" layoutY="146.0" prefHeight="25.0" prefWidth="221.0" promptText="Mot de passe " style="-fx-background-color: #b8BBC5;" />
+      <JFXButton fx:id="buttonConnect" layoutX="118.0" layoutY="195.0" onAction="#connection" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #73ACF1;" text="Se connecter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="16.0" fitWidth="18.0" layoutX="323.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/baseline_person_outline_white_18dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="18.0" layoutX="323.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/baseline_lock_white_18dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="progress" fitHeight="25.0" fitWidth="189.0" layoutX="145.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loadernew.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="text" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Le systeme traite votre demande " wrappingWidth="180.0000019930303" />
+      <Text fill="WHITE" layoutX="8.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff" wrappingWidth="68.9999925121665">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="text2" fill="#cbd0dc" layoutX="154.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrer vos Identifiants" wrappingWidth="148.0000019930303">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="121.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion" wrappingWidth="166.66667026281357">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jasperreports-6.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/com/staff/librairies/jasperreports-6.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/staff/librairies/mysql-connector-java-5.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/com/staff/librairies/TrayTester.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="222.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.staff.controllers.RefusController">
+    <children>
+        <AnchorPane layoutX="-6.0" layoutY="-9.0" prefHeight="70.0" prefWidth="348.0" style="-fx-background-color: #1D2945;">
+            <children>
+                <Text fill="WHITE" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff" wrappingWidth="67.13671875">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="109.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rfuser une candidature" wrappingWidth="175.1367146372795">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="progress" fitHeight="39.0" fitWidth="55.0" layoutX="275.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/blueLightloading.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="idMissionTxt" layoutX="56.0" layoutY="80.0" prefHeight="27.0" prefWidth="199.0" promptText="Identifiant Mission" style="-fx-border-color: #1d2945;" />
+        <TextField fx:id="statutTxt1" layoutX="273.0" layoutY="80.0" prefHeight="27.0" prefWidth="61.0" promptText="statut" style="-fx-border-color: #1d2945;" />
+        <TextField fx:id="userIdTxt" layoutX="56.0" layoutY="115.0" prefHeight="27.0" prefWidth="199.0" promptText="identifiant utilisateur" style="-fx-border-color: #1d2945;" />
+        <JFXButton fx:id="attributeButton" layoutX="56.0" layoutY="147.0" onAction="#refusMission" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #73ACF1;" text="Refuser" textFill="WHITE" />
+    </children>
+</AnchorPane>

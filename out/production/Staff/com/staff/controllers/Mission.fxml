@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="495.0" prefWidth="780.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.staff.controllers.MissionController">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="780.0" style="-fx-background-color: #1D2945;">
+         <children>
+            <TextField fx:id="chercherTxt" layoutX="125.0" layoutY="13.0" opacity="0.19" prefHeight="39.0" prefWidth="307.0" promptText="Chercher" style="-fx-background-color: #347b89;" />
+            <ImageView fx:id="progress" fitHeight="39.0" fitWidth="39.0" layoutX="81.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/blueLightloading.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="31.0" layoutX="410.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_search_white_18dp.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="buttonSearch" layoutX="442.0" layoutY="14.0" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #73ACF1;" text="Chercher" textFill="WHITE" />
+            <ImageView fx:id="addmission" fitHeight="22.0" fitWidth="37.0" layoutX="708.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_add_white_18dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="672.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/baseline_autorenew_white_18dp.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff" wrappingWidth="67.13671875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableviewMission" layoutY="164.0" prefHeight="328.0" prefWidth="780.0">
+        <columns>
+          <TableColumn fx:id="identifiant" prefWidth="115.0" text="Identifiant" />
+          <TableColumn fx:id="titreColumn" prefWidth="128.0" text="Titre Mission" />
+            <TableColumn fx:id="dateColumn" prefWidth="130.0" text="Date" />
+            <TableColumn fx:id="lieuColumn" prefWidth="149.0" text="Lieu" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Options" />
+            <TableColumn fx:id="entrepriseColumn" prefWidth="129.0" text="Entreprise" />
+            <TableColumn prefWidth="129.0" text="Options" />
+        </columns>
+      </TableView>
+      <Text fill="#1d2945" layoutX="55.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toutes les Missions" wrappingWidth="285.13671875">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
